@@ -129,10 +129,10 @@
         base_layer {
             label = "LAYER_BASE";
             bindings = <
-&none           &hm LS(LA(LC)) W &hm LS(LA(LC(LG))) &none         &none    &none  &hm LS(LA(LC(LG))) W &kp LS(LA(LC)) Y &none       &none      
-&hm LGUI A      &hm LALT R       &hm LCTRL S        &hm LSHIFT T  &none    &none  &hm LSHIFT N         &hm LCTRL E      &hm LALT I  &hm LGUI O
-&lt LAYER_BT Z  &kp X            &kp C              &kp D         &none    &none  &kp H                &kp J            &kp K       &lt LAYER_SYM2 L
-        	&lt LAYER_NAV  &kp SPACE  &lt LAYER_SYM BACKSPACE          &lt LAYER_BT TAB     &lt LAYER_NUM ENTER
+&none           &hm LS(LA(LCTL)) Q &hm LS(LA(LC(LGUI))) F &none         &none    &none  &hm LS(LA(LC(LGUI))) W &kp LS(LA(LLCTL) Y &none       &none      
+&hm LGUI A      &hm LALT R         &hm LCTRL S            &hm LSHIFT T  &none    &none  &hm LSHIFT N           &hm LCTRL E        &hm LALT I  &hm LGUI O
+&lt LAYER_BT Z  &kp X              &kp C                  &kp D         &none    &none  &kp H                  &kp J              &kp K       &lt LAYER_SYM2 L
+        	        &lt LAYER_NAV  &kp SPACE  &lt LAYER_SYM BACKSPACE               &lt LAYER_BT TAB     &lt LAYER_NUM ENTER
             >;
 
             trackball-bindings = <&tmv_coarse>;
