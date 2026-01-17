@@ -15,14 +15,8 @@ config ZMK_SPLIT
 	
 endif
 
-config MOUSE_LAYER_INDEX
-	int "Index of mouse layer"
-	default 10
 
 config SCROLL_LAYER_INDEX
 	int "Index of scroll layer"
 	default 5
 
-config MOUSE_LAYER_ACTIVE_MS
-	int "Mouse layer active time in ms"
-	default 400
