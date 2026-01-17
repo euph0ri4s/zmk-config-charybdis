@@ -63,7 +63,7 @@
     macros {
 	    meh: meh{
 		    label = "meh";
-		    compatible = "zmk,behavior-macro>;
+		    compatible = "zmk,behavior-macro>";
 		    #binding-cells = <0>;
 		    bindings
 		    	= <&macro_tap &kp LCTR &kp LALT &kp LSHFT>
@@ -72,7 +72,7 @@
 	    
 	    hyper: hyper{
 		    label = "hyper";
-		    compatible = "zmk,behavior-macro>;
+		    compatible = "zmk,behavior-macro>";
 		    #binding-cells = <0>;
 		    bindings
 		    	= <&macro_tap &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
