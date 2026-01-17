@@ -61,9 +61,9 @@
     };
     
      macros {
-             meh: meh{
+             meh: meh {
          	    label = "meh";
-         	    compatible = "zmk,behavior-macro>";
+         	    compatible = "zmk,behavior-macro";
          	    #binding-cells = <0>;
          	    bindings
          	    	= <&macro_press   &kp LS(LC(LALT))>
@@ -72,9 +72,9 @@
          		;
              };
              
-             hyper: hyper{
+             hyper: hyper {
          	    label = "hyper";
-         	    compatible = "zmk,behavior-macro>";
+         	    compatible = "zmk,behavior-macro";
          	    #binding-cells = <0>;
          	    bindings
          	    	= <&macro_press   &kp LS(LA(LC(LGUI)))>
