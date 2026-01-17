@@ -66,8 +66,10 @@
 		    compatible = "zmk,behavior-macro>";
 		    #binding-cells = <0>;
 		    bindings
-		    	= <&macro_tap &kp LCTR &kp LALT &kp LSHFT>
+		    	= <&macro_press   &kp LCTR &kp LALT &kp LSHFT>
+			, <&macro_release &kp LCTR &kp LALT &kp LSHFT>
 			;
+
 	    };
 	    
 	    hyper: hyper{
@@ -75,7 +77,8 @@
 		    compatible = "zmk,behavior-macro>";
 		    #binding-cells = <0>;
 		    bindings
-		    	= <&macro_tap &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
+		    	= <&macro_press   &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
+			, <&macro_release &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
 			;
     };
 
