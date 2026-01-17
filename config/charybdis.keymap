@@ -67,6 +67,7 @@
 		    #binding-cells = <0>;
 		    bindings
 		    	= <&macro_press   &kp LCTR &kp LALT &kp LSHFT>
+			, <&macro_pause_release>
 			, <&macro_release &kp LCTR &kp LALT &kp LSHFT>
 			;
 
@@ -78,8 +79,10 @@
 		    #binding-cells = <0>;
 		    bindings
 		    	= <&macro_press   &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
+			, <&macro_pause_release>
 			, <&macro_release &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
 			;
+	    },
     };
 
     combos {
