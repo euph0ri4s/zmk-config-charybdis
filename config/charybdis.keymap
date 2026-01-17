@@ -60,30 +60,30 @@
         };
     };
     
-    macros {
-	    meh: meh{
-		    label = "meh";
-		    compatible = "zmk,behavior-macro>";
-		    #binding-cells = <0>;
-		    bindings
-		    	= <&macro_press   &kp LCTR &kp LALT &kp LSHFT>
-			, <&macro_pause_release>
-			, <&macro_release &kp LCTR &kp LALT &kp LSHFT>
-			;
+   //  macros {
+   //          meh: meh{
+   //      	    label = "meh";
+   //      	    compatible = "zmk,behavior-macro>";
+   //      	    #binding-cells = <0>;
+   //      	    bindings
+   //      	    	= <&macro_press   &kp LCTR &kp LALT &kp LSHFT>
+   //      		, <&macro_pause_release>
+   //      		, <&macro_release &kp LCTR &kp LALT &kp LSHFT>
+   //      		;
 
-	    };
-	    
-	    hyper: hyper{
-		    label = "hyper";
-		    compatible = "zmk,behavior-macro>";
-		    #binding-cells = <0>;
-		    bindings
-		    	= <&macro_press   &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
-			, <&macro_pause_release>
-			, <&macro_release &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
-			;
-	    },
-    };
+   //          };
+   //          
+   //          hyper: hyper{
+   //      	    label = "hyper";
+   //      	    compatible = "zmk,behavior-macro>";
+   //      	    #binding-cells = <0>;
+   //      	    bindings
+   //      	    	= <&macro_press   &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
+   //      		, <&macro_pause_release>
+   //      		, <&macro_release &kp LGUI &kp LCTR &kp LALT &kp LSHFT>
+   //      		;
+   //          },
+   //  };
 
     combos {
         compatible = "zmk,combos";
@@ -102,8 +102,8 @@
         COMBO(COMMA, 0, 35, 16 18) 
         COMBO(DOT, 0, 35, 17 18)
         COMBO(MINUS, 0, 50, 18 19)
-	COMBO(&meh, 0, 50, 16 19)
-	COMBO(&hyper, 0, 50, 16 17 18 19)
+	// COMBO(&meh, 0, 50, 16 19)
+	// COMBO(&hyper, 0, 50, 16 17 18 19)
         COMBO(FSLH, 0, 35, 26 28)
         COMBO(CAPS, 0, 50, 28 29)
         COMBO(DEL, 0, 50, 16 19)
@@ -129,10 +129,10 @@
         base_layer {
             label = "LAYER_BASE";
             bindings = <
-&none           &meh        &hyper        &none         &none    &none  &hyper        &meh        &none       &none      
-&hm LGUI A      &hm LALT R  &hm LCTRL S   &hm LSHIFT T  &none    &none  &hm LSHIFT N  &hm LCTRL E &hm LALT I  &hm LGUI O
-&lt LAYER_BT Z  &kp X       &kp C                &kp D  &none    &none  &kp H         &kp J       &kp K       &lt LAYER_SYM2 L
-          &lt LAYER_NAV  &kp SPACE  &lt LAYER_SYM BACKSPACE    &lt LAYER_BT TAB     &lt LAYER_NUM ENTER
+&none           &kp LS(LA(LC)) &kp LS(LA(LC(LG))) &none         &none    &none  &kp LS(LA(LC(LG))) &kp LS(LA(LC))  &none       &none      
+&hm LGUI A      &hm LALT R     &hm LCTRL S        &hm LSHIFT T  &none    &none  &hm LSHIFT N       &hm LCTRL E     &hm LALT I  &hm LGUI O
+&lt LAYER_BT Z  &kp X          &kp C              &kp D         &none    &none  &kp H              &kp J           &kp K       &lt LAYER_SYM2 L
+                &lt LAYER_NAV  &kp SPACE  &lt LAYER_SYM BACKSPACE        &lt LAYER_BT TAB     &lt LAYER_NUM ENTER
             >;
 
             trackball-bindings = <&tmv_coarse>;
