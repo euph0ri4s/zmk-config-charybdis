@@ -81,7 +81,7 @@
          		, <&macro_pause_release>
          		, <&macro_release &kp LS(LA(LC(LGUI)))>
          		;
-             },
+             };
      };
 
     combos {
